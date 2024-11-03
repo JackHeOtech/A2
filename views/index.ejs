@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+    <head>
+        <!--adding style sheets for different view ports (media query)-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylemobile.css" media="only screen and (max-width:480px)">
+        <link rel="stylesheet" href="styletablet.css" media="only screen and (min-width:481px) and (max-width:960px)">
+
+        <meta charset="UTF-8">
+
+        <title>My website</title>
+
+
+    </head>
+    <body>
+        <header id="header">
+            <div class="header container">
+                <nav class="navList">
+                    <h4>Navigation Links</h4>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="navlink">Home</a> <!--Assignment1.html is going to be the home page a-->
+                        </li>
+                        <li>
+                            <a href="about.html" class="navlink">About</a>
+                        </li>
+                        <li>
+                            <a href="projects.html" class="navlink">Projects</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="navlink">Contact Me</a>
+                        </li>
+                    </ul>
+        </nav>
+    </div>
+
+    <div class="box">
+    <h1>Jack's super cool website</h1>
+    <h2>Hi there!</h2>
+    <h2>Welcome to my home page!</h2>
+    <h2>Here you'll find the navigation links to the different parts of my website!</h2>
+    </div>
+
+
+
+
+</header>
+
+<div class="contactfooter">
+    <p>Contact: jack.he@ontariotechu.net</p>
+    <p>&copy; 2024 by Jack He</p>
+</div>
+
+    </body>
 </html>
