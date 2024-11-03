@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="stylemobile.css" media="only screen and (max-width:480px)">
+        <link rel="stylesheet" href="styletablet.css" media="only screen and (min-width:481px) and (max-width:960px)">
+        <title>ContactMe</title>
+        <meta charset="UTF-8">
+        <div id="banner">
+            <title>My website</title>
+            <div class="contactbanner">
+                <h1>Questions? Contact me!</h1>
+            </div>
+        </div>
+
+    </head>
+    <body>
+        <header id="header">
+            <div class="header container">
+                <nav class="navList">
+                    <h4>Navigation Links</h4>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="navlink">Home</a> <!--Assignment1.html is going to be the home page-->
+                        </li>
+                        <li>
+                            <a href="about.html" class="navlink">About</a>
+                        </li>
+                        <li>
+                            <a href="projects.html" class="navlink">Projects</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="navlink">Contact Me</a>
+                        </li>
+                    </ul>
+        </nav>
+    </div>
+    </header>
+
+
+    <div class="contactform">
+    <form action=mailto:jack.he@ontariotechu.net ?subject=Signup Form method="post" enctype="text/plain" name="form">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" required placeholder="Enter your name"> <!--required is required field, placeholder hints at what goes into that field-->
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" required placeholder="Enter your email">
+
+        <label for="comments">Comments:</label>
+        <textarea name="comments" cols="50" rows="9" required placeholder="Type your comments here"></textarea>
+
+        <input type="submit" value="Click to submit">
+    </form>
+</div>
+<div class="contactfooter">
+    <p>Contact: jack.he@ontariotechu.net</p>
+    <p>&copy; 2024 by Jack He</p>
+</div>
+
+
+    </body>
+</html>
