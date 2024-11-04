@@ -1,8 +1,145 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@charset "UTF-8";
+
+html, body { /*Have to define html too, not just body*/
+background: linear-gradient(45deg, #000000 0%, #760000 100%);
+font-family: Noto Sans, sans-serif;
+height:100%;
+width: 100%; /*Defining width and height to 100% fills the entire page, stopping the issue where the color splits and repeats in the middle of the page*/
+
+
+}
+#banner{
+    color:white;
 }
 
-a {
-  color: #00B7FF;
+#banner .contactbanner{
+    color:white;
+    position:absolute; /*Absolute allows element to be moved with specific values*/
+    right:39%;
+
+}
+
+.headText{
+    color:white;
+}
+
+
+#right-column {
+    position: absolute; 
+    top: 190px;
+    right:100px;
+    text-align: center;
+    height: 50%;
+    width: 70%;
+    color:white;
+
+}
+
+#right-column .box{
+    display: inline-block; /*Inline block stops a new line from being created*/
+    color:white;
+    margin-top: 30px;  
+    margin-right: 30px;
+    vertical-align: top; /*Vertical align allows for texts to be aligned horizontally at the top*/
+    height: 10%;
+    width:25%;
+}
+
+.projectsbanner {
+    position: absolute;
+    right:540px;
+    top: 140px;
+    color:white;
+
+}
+
+
+
+h1,h2,h3,h4,h5,h6,p,li {
+    margin-left:15px;
+}
+
+
+
+.box {
+    color: white;
+    height: 300px;
+    width: 500px;
+    margin-top: 150px;
+    margin-left: -1px; /*Margin-left prevents overlapping of text (specifically on the projects page)*/
+}
+
+img{
+    display:block; /*display block gets rid of that tiny extra space at the bottom of images*/
+}
+
+.aboutmeimage { 
+    position: absolute;
+    right: 40%;
+    top: 19%;
+    background-color:white;
+    padding: 7px; /*Adding padding to the aboutmeimage div and then applying a white background allows me to add an outline to it*/
+}
+
+.aboutmevideo {
+    position: absolute;
+    right: 10%;
+    top: 19%;
+    background-color: white;
+    padding: 7px; /*Same idea of adding padding to the div then setting the background to white*/
+
+}
+
+
+.navList { /*Actual box for the navigation links*/
+    color: white;
+    position: absolute;
+    top: 0;           
+    right: 0;           
+}
+
+.navList ul {
+    padding: 0; /*Setting padding to 0 removes that invisible border, putting the links closer together*/
+}
+
+.navList ul li {
+    display: inline-block;  /*Displays each block horizontally*/
+    margin-right: 10px; /*Space between each link*/
+}
+
+
+.contactform{
+    color:white;
+    display: block; /*Vertical stack*/
+    position:absolute;
+    right:40%;
+    top:18%;
+    margin-bottom:20px;
+    width:400px;
+}
+
+
+
+
+
+.contactform label {
+    display: block; /*Ensures labels stack vertically*/
+    margin-bottom: 8px;
+}
+
+.contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
+    width: 100%; /*Ensuring that contact form blocks take up the entire area of contactform*/
+    padding: 10px;
+    margin-bottom: 15px;
+
+
+}
+
+
+.contactfooter {
+    color:white;
+    height:10px;
+    font-size:10px;
+    position:fixed; /*Fixed position allows for something to stay on the page while scrolling*/
+    bottom:70px;
 }
