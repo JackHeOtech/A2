@@ -1,10 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router(); //Must use router.get in the routes instead of app.get
 
 
 //Defining the routes to the different view pages and setting the view engine as ejs
-
-app.set("view engine", "ejs");
 
 router.get("/", (req,res) => { //using / opens the root file rather than needing to put /index
   res.render("index", {title: "Home"}) //res.render works by loading the first parameter (view) which is your web page, locals is the variable inside the webpage you want to pass to the view
@@ -21,3 +19,5 @@ router.get("/projects", (req,res) => {
 router.get("/contact", (req,res) => {
   res.render("contact", {title: "Contact Me"})
 })
+
+module.exports = router;
