@@ -14,3 +14,8 @@ https://www.geeksforgeeks.org/express-js-app-listen-function/
 
 4. How to use include function in ejs
 https://www.geeksforgeeks.org/how-to-include-a-template-with-parameters-in-ejs-2/
+
+
+Bootstrap and Fontawesome links
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
+https://cdnjs.com/libraries/font-awesome
