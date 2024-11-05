@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+html, body { /*Have to define html too, not just body*/
+background: linear-gradient(45deg, #000000 0%, #760000 100%);
+font-family: Noto Sans, sans-serif;
+height:100%;
+width: 100%; /*Defining width and height to 100% fills the entire page, stopping the issue where the color splits and repeats in the middle of the page*/
+
+
+}
+#banner{
+    color:white;
+}
+
+#banner .contactbanner{
+    color:white;
+    position: relative; /*Relative positioning must be used to allow for readjustments due to different sizes of screen*/
+    right:30%;
+
+}
+
+.headText{
+    color:white;
+}
+
+
+#right-column {
+    position: relative;
+    top: 190px;
+    right:100px;
+    text-align: center;
+    width: 100%;
+    color:white;
+
+}
+
+#right-column .box{
+    display: block; /*Sets boxes vertically for better viewing on smaller screens*/
+    color:white;
+    margin-top: 30px;  
+    margin-right: 30px;
+    height: auto; /*Allowing height to adjust automatically based on how large the boxes are from text*/
+    width:100%;
+}
+
+.projectsbanner {
+    position: absolute;
+    right:540px;
+    top: 140px;
+    color:white;
+
+}
+
+
+
+h1,h2,h3,h4,h5,h6,p,li {
+    margin-left:15px;
+}
+
+
+
+
+
+.box {
+    color: white;
+    height: auto;
+    width: 70%;
+    margin-top: 50px;/*Make margin smaller so it fits better on smaller screens*/
+    margin-left: -1px;
+}
+
+img{
+    display:block; 
+    width:70%;
+    height:auto;
+}
+
+.aboutmeimage { 
+    position: relative; /*Remove absolute positioning*/
+    right: 40%;
+    top: 19%;
+    width:100%;
+    height:auto; /*Preserving aspect ratio again*/
+    background-color:white;
+    padding: 7px;
+}
+
+.aboutmevideo {
+    position: relative;/*Since it is a bigger screen compared to mobile I think using relative positioning would allow for some sort of manual movement of elements*/
+    width:100%;
+    height:auto; /*Preserving aspect ratio*/
+    right: 10%;
+    top: 19%;
+    background-color: white;
+    padding: 7px;
+
+}
+
+
+.navList { 
+    color: white;
+    position: absolute;
+    top: 0;           
+    right: 0;           
+}
+
+.navList ul {
+    padding: 0; 
+}
+
+.navList ul li {
+    display: inline-block;  
+    margin-right: 10px; 
+}
+
+
+.contactform{
+    color:white;
+    display: block; /*Using block here allows for the form elements to stack vertically*/
+    margin-bottom:20px;
+    width:70%;
+}
+
+
+
+.contactform label {
+    display: block; 
+    margin-bottom: 8px;
+}
+
+.contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
+    width: 100%;/*Ensuring that contact form blocks take up the entire area of contactform*/
+    padding: 10px;
+    margin-bottom: 15px;
+
+
+}
+
+.contactfooter {
+    color:white;
+    height:10px;
+    font-size:10px;
+    position: fixed;
+    bottom:70px;
+}

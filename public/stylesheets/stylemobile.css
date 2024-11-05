@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*High contract colour scheme for mobile*/
+/*Better to remove any sort of fixed positioning in mobile design because mobile devices tend to move a lot of stuff around*/
+
+html, body { /*Have to define html too, not just body*/
+    background: linear-gradient(45deg, #000000 0%, #760000 100%);
+    font-family: Noto Sans, sans-serif;
+    height:100%;
+    width: 100%; /*Defining width and height to 100% fills the entire page, stopping the issue where the color splits and repeats in the middle of the page*/
+}
+#banner {
+    color:white;
+    }
+
+#banner .contactbanner {
+    color: white;
+    position: static; /*Static positioning is better for mobile viewports because mobile view often changes. Static allows elements to change and adjust*/
+
+}
+
+.headtext{
+    color:white;
+}
+
+#right-column {
+    display: block; /*allowing boxes to stack on top of each other*/
+    height: 50%;
+    width: 100%; /*Fully fits the width of device*/
+    text-align: center;
+    color:white;
+}
+
+#right-column .box {
+    width:100%; /*Setting width to 100% allows for fluid design*/
+    margin-top:20px;
+    margin-bottom:20px;
+    color:white;
+}
+
+.projectsbanner {
+    position: absolute;
+    right:540px;
+    top: 140px;
+    color:white;
+
+}
+
+
+h1,h2,h3,h4,h5,h6,p,li {
+    margin-left:15px;
+}
+
+
+.box {
+    color: white;
+    height: 300px;
+    width: 500px;
+    margin-top: 150px;
+    margin-left: -1px;
+}
+
+img{
+    display:block; /*Display block gets rid of that tiny extra space at the bottom of images*/
+    width:100%;
+
+}
+
+.aboutmeimage { 
+    position: relative; /*Relative places an element relative to its original position or the position that it was supposed to be in originally*/
+    right: 40%;
+    top: 19%;
+    background-color:white;
+    padding: 7px;
+    width:100%;
+    height: auto; /*Setting height to auto with 100% width preserves the aspect ratio and keeps video clear*/
+}
+
+.aboutmevideo {
+    position: relative;
+    right: 10%;
+    top: 19%;
+    background-color: white;
+    padding: 7px;
+    width:100%;
+    height: auto;
+}
+
+
+.navList { /*Actual box for the navigation links*/
+    color: white;
+    position: relative; /*Changing this to relative allows for elements to be moved around*/
+    top: 0;           
+    right: 0;           
+}
+
+.navList ul {
+    padding: 0; /*Setting padding to 0 removes that invisible border, putting the links closer together*/
+}
+
+.navList ul li {
+    display: block;  /*Displays each block vertically*/
+    margin-bottom: 10px; /*Space between each link*/
+}
+
+
+
+
+
+
+.contactform {
+    color:white;
+    display: block; /*Block allows elements to go to a new line, inline-block will make it so everything is on the same line*/
+    width: 100%;/*Using a percentage allows the boxes to stay a consistent width, as well as allowing for size readjustment (fluid design)*/
+    margin: 20px;
+}
+
+
+
+.contactform label {
+    display: block;
+}
+
+.contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
+    width: 100%; /*Ensuring that contact form blocks take up the entire area of contactform*/
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contactfooter {
+    color:white;
+    height:10px;
+    font-size:10px;
+    position:fixed;
+    bottom:70px;
+}
