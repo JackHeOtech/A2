@@ -1,40 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="stylemobile.css" media="only screen and (max-width:480px)">
-    <link rel="stylesheet" href="styletablet.css" media="only screen and (min-width:481px) and (max-width:960px)">
-    <title><%=title%></title>
-    <style>
-    </style>
-</head>
-
-<body>
-    
-    <div id="bannerProjects">
-        <div class="header container">
-            <nav class="navList">
-                    <h4>Navigation Links</h4>
-                <ul>
-                    <li> <!--Required for going to other pages-->
-                        <a href="index.html" class="navlink">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="navlink">About</a>
-                    </li>
-                    <li>
-                        <a href="projects.html" class="navlink">Projects</a>
-                    </li>
-                    <li>
-                        <a href="contact.html" class="navlink">Contact Me</a>
-                    </li>
-                </ul>
-    </nav>
-    </div>
-    </div>
-
-
+<title><%=title%></title>
     <div class="box">
     <h1>Projects</h1>
     <h2>Welcome to the Projects section!</h2>
@@ -66,9 +30,4 @@
 
 </div>
 
-<div class="contactfooter">
-    <p>Contact: jack.he@ontariotechu.net</p>
-    <p>&copy; 2024 by Jack He</p>
-</div>
-</body>
-</div>
+<%- include("layout") %>

@@ -38,4 +38,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+//listning on port 3000
+app.listen(3000);//Use app instead of server since were using express
+console.log("Server is running successfully")
+
 module.exports = app;
